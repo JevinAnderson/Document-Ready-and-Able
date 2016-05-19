@@ -1,0 +1,35 @@
+{
+  "name": "ready-and-able",
+  "version": "1.0.0",
+  "description": "A simple document ready function that tests to see of document is available for use or not before executing any codes. Convenient to wrap server or testing logic in this before executing.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel index.js --out-dir lib",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JevinAnderson/Document-Ready-and-Able.git"
+  },
+  "keywords": [
+    "document",
+    "ready",
+    "client",
+    "server"
+  ],
+  "author": "Jevin Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JevinAnderson/Document-Ready-and-Able/issues"
+  },
+  "homepage": "https://github.com/JevinAnderson/Document-Ready-and-Able#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
