@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "A simple document ready function that tests to see of document is available for use or not before executing any codes. Convenient to wrap server or testing logic in this before executing.",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "babel index.js --out-dir lib",
     "version": "npm run build",
