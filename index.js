@@ -1,9 +1,9 @@
-function ready(fn){
+var ready = fn => {
   if(typeof document !== 'undefined'){
     if (document.readyState !== 'loading') {
       fn();
     } else {
-      var listener = function() {
+      var listener = () => {
         document.removeEventListener('DOMContentLoaded', listener);
         
         fn();
@@ -13,7 +13,6 @@ function ready(fn){
     }
   }
 }
-
 
 if (typeof module !== 'undefined') {
   module.exports = ready;
