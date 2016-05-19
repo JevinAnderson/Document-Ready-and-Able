@@ -15,4 +15,9 @@ function ready(fn){
 }
 
 
-export default ready;
+if (typeof module !== 'undefined') {
+  module.exports = ready;
+} else {
+  exports.ready = ready;
+}
+
